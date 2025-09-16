@@ -1,4 +1,4 @@
-package config;
+package com.adryjanowski.SpringBoot_DietApp_2025.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
