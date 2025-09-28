@@ -1,27 +1,21 @@
 package com.adryjanowski.SpringBoot_DietApp_2025.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter
+@Setter
 public class Food {
 
     @Id
-    @GeneratedValue
     private Long id;
-    private String name;
+    private String productName;
     private String producer;
-    private int mass; // wartosc masy odniesienia
-    private float calories;
+    private float productWeight;
     private float proteins;
     private float fat;
     private float carbohydrates;
-    private int idUser;
+    private Long idUser;
 }
